@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1eef5"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".view.activity.CourseActivity">
+
+    <!--<include layout="@layout/top_title" />-->
+
+    <com.coursemis.view.myView.TitleView
+        android:id="@+id/class_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.coursemis.view.myView.TitleView>
+
+    <TextView
+        android:id="@+id/class_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/select"
+        android:gravity="center"
+        android:text="课堂点名"
+        android:textSize="22sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/random_question"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/select"
+        android:gravity="center"
+        android:text="随机提问"
+        android:textSize="22sp"
+        android:textColor="#000"/>
+
+    <!--  
+    <TextView
+        android:id="@+id/class_test"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#6fa8dc"
+        android:gravity="center"
+        android:text="当堂测试"
+                        android:layout_marginTop="3dp"
+        
+        android:textSize="22sp" />
+-->
+</LinearLayout>

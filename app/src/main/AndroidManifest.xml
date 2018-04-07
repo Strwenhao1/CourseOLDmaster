@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.coursemis"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></permission>
+
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22"
+        />
+
+    <application
+        android:name="com.coursemis.view.activity.Location"
+        android:allowBackup="true"
+        android:icon="@drawable/application"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar">
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="jpQW17lKZ16jtXrYl2IRaNl0baHBe6sk" />
+        <activity
+            android:name="com.coursemis.view.activity.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.coursemis.view.activity.LoginActivity"
+            android:label="@string/title_activity_login"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.Test"
+            android:label="@string/title_activity_login"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.CourseActivity"
+            android:label="@string/title_activity_course"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.CourseAddActivity"
+            android:label="@string/title_activity_course_add"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.PasswordChangeActivity"
+            android:label="@string/title_activity_password_change"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.CourseInfoActivity"
+            android:label="@string/title_activity_course_info"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.StudentCourseActivity"
+            android:label="@string/title_activity_student_course"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.StudentOfCourseAddActivity"
+            android:label="@string/title_activity_student_of_course_add"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.CoursetableActivity"
+            android:label="@string/title_activity_coursetable"></activity>
+        <!--<activity
+            android:name="com.coursemis.WelcomeStuActivity"
+            android:label="@string/title_activity_welcome_stu" >
+        </activity>-->
+        <activity
+            android:name="com.coursemis.view.activity.EvaluateActivity"
+            android:label="@string/title_activity_evaluate"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.EvaluateAddActivity"
+            android:label="@string/title_activity_evaluate_add"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.CourseEditActivity"
+            android:label="@string/title_activity_course_edit"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.TabMessageActivity"
+            android:label="@string/title_activity_tab_message"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.MessageInfoActivity"
+            android:label="@string/title_activity_message_info"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.EvaluateGetActivity"
+            android:label="@string/title_activity_evaluate_get"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.TStartSignInActivity"
+            android:label="@string/title_activity_login"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.TMentionNameActivity"
+            android:label="@string/title_activity_TMentionName"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.TCourseSignInActivity"
+            android:label="@string/title_activity_TMentionName"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.SCourseSignInActivity"
+            android:label="@string/title_activity_TMentionName"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.TMentionNameActivity_1"
+            android:label="@string/title_activity_TMentionName"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.StudentMainActivity"
+            android:label="@string/title_activity_TMentionName"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.TMentionNameActivity_2"
+            android:label="@string/title_activity_TMentionName"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.TMentionNameActivity_3"
+            android:label="@string/title_activity_TMentionName"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.TMentionNameActivity_4"
+            android:label="@string/title_activity_TMentionName"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.WelcomeActivity"
+            android:label="@string/title_activity_welcome"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.HomeworkManageCourseSelectActivity"
+            android:label="@string/title_activity_homework_manage_course_select"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.HomeworkManageCourseSelectInfoActivity"
+            android:label="@string/title_activity_homework_manage_course_select_info"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.HomeworkManageJobInfoActivity"
+            android:label="@string/title_activity_homework_manage_job_info"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.StudentCheckHomeworkActivity"
+            android:label="@string/title_activity_student_check_homework"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.StudentCheckCourseHomeworkActivity"
+            android:label="@string/title_activity_student_check_course_homework"></activity>
+
+        <service android:name=".service.TSignInService"></service>
+
+        <!--<activity
+            android:name="com.coursemis.HomeWorkImageActivity"
+            android:label="@string/title_activity_home_work_image" >
+        </activity>
+        <activity
+            android:name="com.coursemis.HomeworkImageActivity"
+            android:label="@string/title_activity_homework_image" >
+        </activity>-->
+        <activity
+            android:name=".view.activity.ImageActivity"
+            android:label="@string/title_activity_image"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name=".view.activity.StudentManager"
+            android:label="@string/title_activity_image"
+            android:allowBackup="true"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+            ></activity>
+        <activity
+            android:name=".view.activity.TakePhotoActivity"
+            android:label="@string/title_activity_take_photo"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name=".view.activity.UpLoadActivity"
+            android:label="@string/title_activity_up_load"></activity>
+        <activity
+            android:name=".view.activity.ImageViewActivity"
+            android:label="@string/title_activity_image_view"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name=".view.activity.NetActivity"
+            android:label="@string/title_activity_net"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.HomeworkCourseCSubmitInfoActivity"
+            android:label="@string/title_activity_homework_course_csubmit_info"></activity>
+        <activity
+            android:name=".view.activity.StudentHMUploadActivity"
+            android:label="@string/title_activity_student_hmupload"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.StudentCheckClassHomeworkActivity"
+            android:label="@string/title_activity_student_check_class_homework"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.StudentCheckClassHomeworkInfoActivity"
+            android:label="@string/title_activity_student_check_class_homework_info"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.StudentCheckClassHomeworkInfo_2Activity"
+            android:label="@string/title_activity_student_check_class_homework_info_2"></activity>
+        <activity
+            android:name=".view.activity.UploadAudioActivity"
+            android:label="@string/title_activity_upload_audio"></activity>
+        <activity
+            android:name=".view.activity.AudioPlayerActivity"
+            android:label="@string/title_activity_audio_player"></activity>
+
+        <receiver android:name="com.coursemis.view.activity.EmptyCourseReceiver">
+            <intent-filter>
+                <action android:name="com.coursemis.action.BROAD_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <!--<activity android:name="org.achartengine.GraphicalActivity" />-->
+        <activity
+            android:name=".view.activity.AudioUploadOperationActivity"
+            android:label="@string/title_activity_audio_upload_operation"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.LocationActivity"
+            android:label="@string/title_activity_location"></activity>
+        <activity
+            android:name="com.coursemis.view.activity.CourseTimeActivity"
+            android:label="@string/title_activity_course_time"></activity>
+
+        <!--课堂活动  -->
+        <activity android:name="com.coursemis.view.activity.ClassActivities">
+
+
+        </activity>
+        <!-- 课堂随机提问 -->
+        <activity android:name="com.coursemis.view.activity.TRandomAskActivity"></activity>
+        <activity android:name="com.coursemis.view.activity.TAskQuestionActivity"></activity>
+
+        <activity android:name="com.coursemis.view.activity.EvaluateChooseActivity" />
+        <activity android:name="com.coursemis.view.activity.EvaluateSuggestActivity" />
+        <activity
+            android:name="com.coursemis.view.activity.MapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="MyLocation"
+            android:screenOrientation="sensor"></activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2"></action>
+            </intent-filter>
+        </service>
+
+        <!--绘图-->
+        <activity android:name=".view.activity.BarChartActivity"/>
+        <activity android:name=".view.activity.LineChartActivity"/>
+        <activity android:name=".view.activity.PieChartActivity"/>
+        <!--教师的资源共享界面-->
+        <activity android:name=".view.activity.TUploadAudioActivity"/>
+        <!--新界面-->
+        <activity android:name=".view.activity.NewWelcomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:supportsRtl="true"/>
+        <activity android:name=".view.activity.TSecondActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:supportsRtl="true"/>
+    </application>
+
+</manifest>

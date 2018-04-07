@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <!--<TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bar"></TabWidget>
+-->
+    <com.coursemis.view.myView.TitleView
+        android:id="@+id/tab_message_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.coursemis.view.myView.TitleView>
+
+    <!--<FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+-->
+    <!--
+<FrameLayout
+android:id="@+id/view1"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+<ImageView
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:src="@drawable/ic_launcher"/>
+</FrameLayout>
+    -->
+
+    <ListView
+        android:id="@+id/teacher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <!--
+<ListView
+        android:id="@+id/student"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+</ListView>
+    -->
+
+
+    <!--
+<TextView android:id="@+id/textview3"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:text="this is third tab"/>
+    -->
+
+    <!--</FrameLayout>-->
+</LinearLayout><!--
+
+</TabHost>-->

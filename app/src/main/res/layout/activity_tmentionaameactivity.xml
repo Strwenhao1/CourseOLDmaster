@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/TNMTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.coursemis.view.myView.TitleView
+            android:id="@+id/title_dianming1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </com.coursemis.view.myView.TitleView>
+
+        <com.coursemis.view.myView.SelectItemView
+            android:id="@+id/SelectCourse_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select"
+            android:text="@string/SelectCourse"
+            app:signInClassName="选择课程"
+            app:signInResultName="未选择"/>
+
+        <com.coursemis.view.myView.SelectItemView
+            android:id="@+id/MentionNameWeeks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select"
+            android:text="提问周数"
+            app:signInClassName="提问周数"
+            app:signInResultName="未选择"/>
+
+        <com.coursemis.view.myView.SelectItemView
+            android:id="@+id/MentionNameTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select"
+            android:text="提问时间"
+            app:signInClassName="提问时间"
+            app:signInResultName="未选择"/>
+    </TableLayout>
+
+
+</RelativeLayout>

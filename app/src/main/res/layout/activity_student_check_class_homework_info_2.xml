@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/main2">
+<!-- 
+    <RelativeLayout
+        android:id="@+id/relativelayout_StudentCheckClassHomeworkInfo_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+
+        <Button
+            android:id="@+id/StudentCheckClassHomeworkInfo_2_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" 
+            android:onClick="ButtonOnclick_StudentCheckClassHomeworkInfo_2_back"/>
+
+        <TextView
+            android:id="@+id/StudentCheckClassHomeworkInfo_2_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="班级作业" >
+        </TextView>
+    </RelativeLayout>
+ -->
+    <LinearLayout 
+        android:id="@+id/classhomework_ll"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/title_bg"
+    android:orientation="horizontal" 
+   >
+
+    <Button
+        android:id="@+id/StudentCheckClassHomeworkInfo_2_back"
+        android:onClick="ButtonOnclick_StudentCheckClassHomeworkInfo_2_back"
+        style="@style/Text.Title_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/title_btn_back"
+        android:minWidth="60dip"
+        android:text="返回"
+         />
+
+    <TextView
+        android:id="@+id/StudentCheckClassHomeworkInfo_2_tv"
+        style="@style/Text.Title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1" 
+        android:text="班级作业"/>
+ 
+    <Button
+       
+        style="@style/Text.Title_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:minWidth="70dip" />
+
+</LinearLayout>
+ 
+  <ListView android:id="@+id/relativelayout_ascchi2"
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content"
+       android:layout_below="@id/classhomework_ll"/>    
+        
+<LinearLayout
+	    
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    
+      <Button
+          android:background="@drawable/selectable_item_background"
+            android:id="@+id/StudentCheckClassHomeworkInfo_2_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="下载" 
+            android:textColor="#FFFFFF"
+            android:onClick="ButtonOnclick_StudentCheckClassHomeworkInfo_2_down"
+            android:textSize="23sp"/>
+    
+         <Button
+            
+            android:background="@drawable/selectable_item_background"
+            android:id="@+id/StudentCheckClassHomeworkInfo_2_look"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="查看" 
+             android:textColor="#FFFFFF"
+             android:textSize="23sp"
+              android:onClick="ButtonOnclick_StudentCheckClassHomeworkInfo_2_look"/>
+</LinearLayout>
+
+
+  
+
+</RelativeLayout>

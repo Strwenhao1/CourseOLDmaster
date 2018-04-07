@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/radio_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:text="文件名"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:text="未下载"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:textColor="#cdcdcd"
+        android:layout_marginRight="20dp"/>
+</RelativeLayout>

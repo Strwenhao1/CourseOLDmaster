@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/main2">
+<!-- 
+    <RelativeLayout
+        android:id="@+id/studentcheckhomework_sch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+
+        <Button
+            android:id="@+id/studentcheckhomework_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+
+        <TextView
+            android:id="@+id/studentcheckhomework_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="课程选择" >
+        </TextView>
+    </RelativeLayout>
+ -->
+ 
+    
+<!--<LinearLayout -->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="50dip"-->
+    <!--android:background="@drawable/title_bg"-->
+    <!--android:orientation="horizontal" >-->
+
+    <!--<Button-->
+        <!--android:id="@+id/studentcheckhomework_back"-->
+        <!--style="@style/Text.Title_Button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="35dip"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:background="@drawable/title_btn_back"-->
+        <!--android:minWidth="60dip"-->
+        <!--android:text="返回" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/studentcheckhomework_textview"-->
+        <!--style="@style/Text.Title"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_weight="1" -->
+        <!--android:text="课程选择"/>-->
+ <!---->
+    <!--<Button-->
+       <!---->
+        <!--style="@style/Text.Title_Button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="35dip"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:minWidth="70dip" />-->
+
+<!--</LinearLayout>-->
+    
+<ListView android:id="@+id/studentcheckhomework_listview"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		
+		/>
+    
+    
+    
+
+
+  
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/table_shape"
+    android:layout_margin="15dip"
+    android:orientation="horizontal" >
+    <LinearLayout android:layout_width="40sp"
+	    android:layout_height="match_parent">
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/student"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="180sp"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	    <TextView 
+	        android:id="@+id/adapter_student_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        style="@style/TextViewText"
+	        android:paddingLeft="10dp"
+	        android:gravity="center"
+	        />
+	    <TextView 
+	        android:id="@+id/adapter_student_num"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        style="@style/TextViewText2"
+	        android:paddingLeft="10dp"
+	        android:gravity="center"
+	        />
+    </LinearLayout>
+    <LinearLayout android:layout_width="40sp"
+	    android:layout_height="match_parent">
+        <Button 
+        android:id="@+id/adapter_student_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_icon_delete"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:contentDescription="删除"
+        />
+    </LinearLayout>
+    
+</LinearLayout>

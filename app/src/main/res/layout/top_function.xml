@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:padding="5dp"
+    android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/reback_btn"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/top_btn_back"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/function_btn"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/top_btn_function"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+</LinearLayout>

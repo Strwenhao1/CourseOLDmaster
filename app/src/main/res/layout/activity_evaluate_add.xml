@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+       <!--<RelativeLayout-->
+  			<!--android:layout_width="fill_parent"-->
+  			<!--android:layout_height="45dp"-->
+  			<!--android:background="@drawable/title_bar"-->
+  			<!--android:id="@+id/title" -->
+  			<!--android:gravity="center_vertical"  >-->
+  			<!--<Button-->
+            	<!--android:id="@+id/reback_btn"-->
+            	<!--android:layout_width="60dp"-->
+            	<!--android:layout_height="38dp"-->
+            	<!--android:layout_centerVertical="true"-->
+            	<!--android:text="返回"-->
+            	<!--android:textSize="18sp"/>  -->
+      		<!--<TextView-->
+      		    <!--android:id="@+id/tv_title"-->
+        		<!--android:layout_width="wrap_content" -->
+        		<!--android:layout_height="wrap_content" -->
+        		<!--android:text="课程评分"-->
+        		<!--android:layout_centerInParent="true"-->
+        		<!--android:textSize="20sp"		-->
+				<!--android:textColor="#ffffff" />-->
+
+       <!--</RelativeLayout>-->
+	
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您觉得老师对这堂课讲解得清晰吗"
+            android:textColor="@color/tabDark"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup 
+            android:id="@+id/option1"
+            android:contentDescription="选项1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton android:id="@+id/A1"
+                android:text="A"
+                android:textColor="@color/tabMedium"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content">
+            </RadioButton>
+            <RadioButton android:id="@+id/B1"
+                android:text="B"
+                android:textColor="@color/tabMedium"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content">
+            </RadioButton>
+            <RadioButton android:id="@+id/C1"
+                android:text="C"
+                android:textColor="@color/tabMedium"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content">
+            </RadioButton>
+            <RadioButton android:id="@+id/D1"
+                android:text="D"
+                android:textColor="@color/tabMedium"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content">
+            </RadioButton>
+            <RadioButton android:id="@+id/E1"
+                android:text="E"
+                android:textColor="@color/tabMedium"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content">
+            </RadioButton>
+            
+        </RadioGroup>
+        
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您觉得老师上课准备充分吗"
+            android:textColor="@color/tabDark"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <RadioGroup 
+            android:id="@+id/option2"
+            android:contentDescription="选项2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton android:id="@+id/A2"
+                android:text="A"
+                android:textColor="@color/tabMedium"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content">
+            </RadioButton>
+            <RadioButton android:id="@+id/B2"
+                android:text="B"
+                android:textColor="@color/tabMedium"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content">
+            </RadioButton>
+            <RadioButton android:id="@+id/C2"
+                android:text="C"
+                android:textColor="@color/tabMedium"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content">
+            </RadioButton>
+            <RadioButton android:id="@+id/D2"
+                android:text="D"
+                android:textColor="@color/tabMedium"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content">
+            </RadioButton>
+            <RadioButton android:id="@+id/E2"
+                android:text="E"
+                android:textColor="@color/tabMedium"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content">
+            </RadioButton>
+            
+        </RadioGroup>
+        
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您觉得老师讲课的风格你喜欢吗"
+            android:textColor="@color/tabDark"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <RadioGroup 
+            android:id="@+id/option3"
+            android:contentDescription="选项3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton android:id="@+id/A3"
+                android:text="A"
+                android:textColor="@color/tabMedium"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content">
+            </RadioButton>
+            <RadioButton android:id="@+id/B3"
+                android:text="B"
+                android:textColor="@color/tabMedium"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content">
+            </RadioButton>
+            <RadioButton android:id="@+id/C3"
+                android:text="C"
+                android:textColor="@color/tabMedium"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content">
+            </RadioButton>
+            <RadioButton android:id="@+id/D3"
+                android:text="D"
+                android:textColor="@color/tabMedium"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content">
+            </RadioButton>
+            <RadioButton android:id="@+id/E3"
+                android:text="E"
+                android:textColor="@color/tabMedium"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content">
+            </RadioButton>
+            
+        </RadioGroup>
+       <TextView
+           android:textColor="@color/tabDark"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:text="您的意见或建议："
+           android:textSize="18sp"
+           android:layout_marginTop="5dp"
+           />
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="#C7EDCC"
+        >
+        <EditText
+            android:id="@+id/feekback_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入你的意见或建议...."
+            android:background="@null"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+      
+    </LinearLayout>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="注意："
+        android:textSize="15sp"
+        android:textColor="#EA2000"
+        android:layout_marginLeft="6dp"
+        />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="A:优秀 B:良好 C:一般 D:较差 E:很差        个人建议不能为空否则不能提交"
+        android:paddingLeft="35dp"
+        android:textSize="15sp"
+        android:textColor="#EA2000"
+        android:layout_marginLeft="6dp"
+        />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/evaluatefinish_btn"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:text="提交"
+        android:textSize="18sp" />
+</RelativeLayout>
+
+</LinearLayout>

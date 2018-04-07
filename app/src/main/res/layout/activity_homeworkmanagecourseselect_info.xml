@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/main2">
+<!--  
+    <RelativeLayout
+        android:id="@+id/relativelayout_hmmcs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+
+        <Button
+            android:id="@+id/homeworkmanagecourseselect_info__back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+
+        <TextView
+            android:id="@+id/homeworkmanagecourseselect_info__textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="课程信息" >
+        </TextView>
+    </RelativeLayout>
+-->
+
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/title_bg"
+    android:orientation="horizontal" 
+    android:id="@+id/relativelayout_hmmcs">
+
+    <Button
+        android:id="@+id/homeworkmanagecourseselect_info__back"
+        style="@style/Text.Title_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/title_btn_back"
+        android:minWidth="60dip"
+        android:text="返回" />
+
+    <TextView
+        android:id="@+id/homeworkmanagecourseselect_info__textview"
+        style="@style/Text.Title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1" 
+        android:text="课程信息"/>
+ 
+    <Button
+       
+        style="@style/Text.Title_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:minWidth="70dip" />
+
+</LinearLayout>
+
+<ListView android:id="@+id/homeworkmanagecourseinfoListview"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_below="@id/relativelayout_hmmcs"
+		
+		/>
+
+
+<!--  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/homeworkmanagecourseselect_info__upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传" 
+            android:onClick="ButtonOnclick_homeworkmanagecourseselect_info__upload"
+            />
+
+        <Button
+            android:id="@+id/homeworkmanagecourseselect_info__down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载"
+            android:onClick="ButtonOnclick_homeworkmanagecourseselect_info__down" />
+
+        <Button
+            android:id="@+id/homeworkmanagecourseselect_info__check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看学生作业" />
+    </LinearLayout>
+
+-->
+
+<LinearLayout
+	      android:id="@+id/l111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    
+      <Button
+          android:background="@drawable/selectable_item_background"
+            android:id="@+id/homeworkmanagecourseselect_info__upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="上传" 
+            android:textColor="#FFFFFF"
+            android:onClick="ButtonOnclick_homeworkmanagecourseselect_info__upload"
+            android:textSize="23sp"/>
+    
+         <Button
+            
+            android:background="@drawable/selectable_item_background"
+            android:id="@+id/homeworkmanagecourseselect_info__down"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="下载" 
+             android:textColor="#FFFFFF"
+             android:textSize="23sp"
+              android:onClick="ButtonOnclick_homeworkmanagecourseselect_info__down"/>
+
+        <Button
+            
+            android:background="@drawable/selectable_item_background"
+            android:id="@+id/homeworkmanagecourseselect_info__check"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="查看" 
+             android:textColor="#FFFFFF"
+              android:textSize="23sp"
+              />
+
+
+</LinearLayout>
+  
+
+  
+
+</RelativeLayout>

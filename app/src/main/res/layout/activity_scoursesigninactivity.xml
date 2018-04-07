@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        	android:id="@+id/scsia_back"
+            android:layout_marginLeft="20dip"
+            android:text="返回"
+            android:scaleType="centerCrop"
+            android:background="@drawable/i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <ListView android:id="@+id/s_studentcourseSignIninfo"
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content"/>
+
+</LinearLayout>

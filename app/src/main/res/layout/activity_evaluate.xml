@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+           
+        <RelativeLayout
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:id="@+id/title" 
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_vertical">
+  			<!--<Button-->
+            	<!--android:id="@+id/reback_btn"-->
+            	<!--android:layout_width="60dp"-->
+            	<!--android:layout_height="38dp"-->
+            	<!--android:layout_centerVertical="true"-->
+            	<!--android:text="返回"-->
+            	<!--android:textSize="18sp"-->
+            	<!--android:textColor="#000000"/>  -->
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="选择评分课程 "
+        		android:layout_centerInParent="true"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff" /> 
+			<Button
+            	android:id="@+id/continue_btn"
+            	android:layout_width="60dp"
+            	android:layout_height="38dp"
+            	android:layout_centerVertical="true"
+            	android:layout_alignParentRight="true"
+            	android:text="评教"
+            	android:layout_marginRight="5dp"
+            	android:textSize="18sp"
+            	android:textColor="#000000"/>
+		</RelativeLayout>
+	
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:orientation="horizontal" >
+
+        <ListView 
+	    android:id="@+id/courseOfStudentList"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+		</ListView>
+
+    </LinearLayout>
+    <FrameLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/asdd"
+		></FrameLayout>
+</LinearLayout>

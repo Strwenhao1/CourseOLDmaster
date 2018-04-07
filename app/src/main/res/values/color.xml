@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <drawable name="red">#FF0000</drawable>
+     <color name="transparent_background">#20000000</color>  
+     <color name="background_no_color">#00000000</color>
+     <color name="toolBar">#1B9B62</color>
+     <color name="gray">#cdcdcd</color>
+</resources>

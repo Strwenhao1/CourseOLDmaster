@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent" >  
+   <ImageView   
+        android:id="@+id/audiouploadoperationactivity_iv"  
+        
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"/>  
+    
+    	    <LinearLayout
+	         android:orientation="vertical"
+	         android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	       >
+	  <Button  
+        android:id="@+id/audiouploadoperationactivity_bt"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:text="开始录制"   
+        android:onClick="startrecord"
+        android:background="@drawable/select"/>  
+    <Button  
+        android:id="@+id/audiouploadoperationactivity_broadcast" 
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_toRightOf="@id/audiouploadoperationactivity_bt"  
+        android:text="播放视频"  
+        android:onClick="playvideo"
+        android:background="@drawable/select"/>  
+        <Button
+        android:id="@+id/audiouploadoperationactivity_upload"   
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_toRightOf="@id/audiouploadoperationactivity_broadcast"  
+        android:text="上传视频"  
+        android:onClick="ButtonOnclick_audiouploadoperationactivity_upload"
+        android:background="@drawable/select"/> 
+        <Button
+            android:id="@+id/audiouploadoperationactivity_back"     
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_toRightOf="@id/audiouploadoperationactivity_upload"  
+        android:text="返回"  
+        android:onClick="ButtonOnclick_audiouploadoperationactivity_back"
+        android:background="@drawable/select"/>   
+	    </LinearLayout>
+    
+   
+</RelativeLayout>  

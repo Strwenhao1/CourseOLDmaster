@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="@drawable/table_shape"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/course" />
+
+    <TextView
+        android:id="@+id/adapter_course_name"
+        style="@style/ListText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_book"
+        android:gravity="left"
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        android:id="@+id/adapter_course_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/adapter_course_name"
+        android:background="@drawable/btn_icon_delete"
+        android:contentDescription="删除" />
+
+    <ImageView
+        android:id="@+id/adapter_course_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_icon_detail" />
+</RelativeLayout>

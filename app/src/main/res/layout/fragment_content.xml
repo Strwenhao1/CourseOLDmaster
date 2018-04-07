@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RadioGroup
+        android:id="@+id/function"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="1"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="3"
+        android:background="#fafafa">
+
+        <RadioButton
+            android:id="@+id/course"
+            style="@style/RadioButtonStyle"
+            android:layout_gravity="center"
+            android:checked="true"
+            android:onClick="itemClick"
+            android:text="课程"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/file"
+            style="@style/RadioButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="itemClick"
+            android:text="文件"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/setting"
+            style="@style/RadioButtonStyle"
+            android:layout_gravity="center"
+            android:onClick="itemClick"
+            android:text="设置"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@id/function"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/function_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+    </android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>

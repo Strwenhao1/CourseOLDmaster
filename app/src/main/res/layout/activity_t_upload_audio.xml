@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main2"
+    android:orientation="vertical">
+
+    <!--
+        <RelativeLayout
+            android:id="@+id/relativelayout_ua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:onClick="ButtonOnclick_uploadaudio__back" />
+
+            <TextView
+                android:id="@+id/uploadaudio__textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="资源共享" >
+            </TextView>
+        </RelativeLayout>
+    -->
+    <!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/title_bg"
+        android:orientation="horizontal"
+        android:id="@+id/relativelayout_ua">
+
+        <Button
+            android:id="@+id/homeworkmanagecourseselect_info__back"
+            style="@style/Text.Title_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/title_btn_back"
+            android:minWidth="60dip"
+            android:text="返回"
+            android:onClick="ButtonOnclick_uploadaudio__back" />
+
+        <TextView
+            android:id="@+id/uploadaudio__textview"
+            style="@style/Text.Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="资源共享"/>
+
+        <Button
+
+            style="@style/Text.Title_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:minWidth="70dip" />
+
+    </LinearLayout>
+    -->
+    <com.coursemis.view.myView.TitleView
+        android:id="@+id/upload_audio_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.coursemis.view.myView.TitleView>
+
+
+    <ListView
+        android:id="@+id/uploadaudio_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upload_audio_title"
+
+        />
+
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/uploadaudio__upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上传"
+                android:onClick="ButtonOnclick_uploadaudio__upload"/>
+
+            <Button
+                android:id="@+id/uploadaudio__down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下载"
+                android:onClick="ButtonOnclick_uploadaudio__down"/>
+
+            <Button
+                android:id="@+id/uploadaudio__broadcast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="播放"
+                android:onClick="ButtonOnclick_uploadaudio_broadcast"
+
+
+                />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="录音上传"
+                  android:onClick="ButtonOnclick_recordUpload" />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="录制视频"
+                  android:onClick="ButtonOnclick_Luzhishipin"
+
+                />
+
+        </LinearLayout>
+     -->
+
+
+    <LinearLayout
+        android:id="@+id/l111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/uploadaudio__upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selectable_item_background"
+            android:onClick="ButtonOnclick_uploadaudio__upload"
+            android:text="上传"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/uploadaudio__down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selectable_item_background"
+            android:onClick="ButtonOnclick_uploadaudio__down"
+            android:text="下载"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/uploadaudio__broadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selectable_item_background"
+            android:onClick="ButtonOnclick_uploadaudio_broadcast"
+            android:text="播放"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selectable_item_background"
+            android:onClick="ButtonOnclick_recordUpload"
+            android:text="录音"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selectable_item_background"
+            android:onClick="ButtonOnclick_Luzhishipin"
+            android:text="录像"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ua_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/relativelayout_ua"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

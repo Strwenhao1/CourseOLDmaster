@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_hmmji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+
+        <Button
+            android:id="@+id/homeworkmanagejob_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+
+        <TextView
+            android:id="@+id/homeworkmanagejob_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="本次作业上交情况" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/homeworkmanagejob_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载" 
+            android:onClick="buttonOnclick_homeworkmanagejob_down"/>
+
+        <Button
+            android:id="@+id/homeworkmanagejob_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看" 
+            android:onClick="buttonOnclick_homeworkmanagejob_look"/>
+
+        <Button
+            android:id="@+id/homeworkmanagejob_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评分" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/hmmji"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/relativelayout_hmmji"
+        >
+    
+        
+        
+        
+    </LinearLayout>
+
+  
+
+</RelativeLayout>

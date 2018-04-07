@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".view.activity.EvaluateGetActivity">
+
+    <com.coursemis.view.myView.TitleView
+        android:id="@+id/evaluate_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.coursemis.view.myView.TitleView>
+
+    <ListView
+        android:id="@+id/xingList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"></ListView>
+</LinearLayout>

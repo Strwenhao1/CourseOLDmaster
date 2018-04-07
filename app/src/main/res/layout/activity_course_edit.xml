@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#f1eef5"
+    tools:context=".view.activity.CourseEditActivity" >
+
+    <!--<include layout="@layout/top"/>
+    -->
+    <com.coursemis.view.myView.TitleView
+        android:id="@+id/course_edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.coursemis.view.myView.TitleView>
+    <LinearLayout  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/table_shape"
+        android:layout_marginTop="20dp"
+        android:layout_margin="15dip" >
+    <LinearLayout  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_shape"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="10dip">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextViewText"
+        android:text="课程名称" />
+        <EditText
+            android:id="@+id/name_course_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            style="@style/EditText"
+            android:text="" >
+        </EditText>
+    </LinearLayout>
+    <LinearLayout  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_shape"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="10dip">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextViewText"
+        android:text="周        数" />
+        
+        <Button
+            android:id="@+id/time_course_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            style="@style/TextViewText"
+            android:text="请选择" />
+        <EditText
+            android:id="@+id/time_course_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/EditText"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:ems="10"
+            android:editable="false">
+
+            <requestFocus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </EditText>
+    </LinearLayout>
+     <LinearLayout  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_shape"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="10dip">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextViewText"
+        android:text="时        间" />
+        
+         <Spinner android:id="@+id/time_course_2"
+             style="@style/EditText"
+            android:layout_width="72dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             style="@style/TextViewText"
+             android:padding="10dip"
+             android:text="~" />
+
+         <Spinner
+             android:id="@+id/time_course_3"
+             style="@style/EditText"
+             android:layout_width="72dip"
+             android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_shape"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="10dip">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextViewText"
+        android:text="地        点" />
+        <EditText
+            android:id="@+id/address_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditText"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:text="" >
+        </EditText>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

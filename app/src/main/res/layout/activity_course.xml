@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#f1eef5"
+    tools:context=".view.activity.CourseActivity" >
+
+    <!--<include layout="@layout/top_add"/>-->
+	<com.coursemis.view.myView.TitleView
+		android:id="@+id/course_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"></com.coursemis.view.myView.TitleView>
+	<!--<ListView
+	    android:id="@+id/courseList"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/table_shape"
+        android:layout_margin="15dip" >
+	</ListView>-->
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/course_list"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/table_shape"
+		></android.support.v7.widget.RecyclerView>
+</LinearLayout>

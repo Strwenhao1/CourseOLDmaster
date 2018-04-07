@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableRow>
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:textSize="8pt" />
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textSize="8pt" />
+        
+    </TableRow>
+    
+    <TableRow>
+        <Button
+            android:id="@+id/studentManage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="学生管理"
+            android:textSize="8pt" />
+        <Button
+            android:id="@+id/studentAllDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="学生清空"
+            android:textSize="8pt" />
+        
+    </TableRow>
+
+</TableLayout>

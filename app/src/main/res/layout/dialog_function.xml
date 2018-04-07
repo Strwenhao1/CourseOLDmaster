@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:background="@drawable/table_shape"
+    android:orientation="vertical" >
+    
+        <LinearLayout  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/table_shape"
+        android:layout_marginTop="6dp"
+        android:padding="10dip">
+        	
+            <TextView
+	            android:id="@+id/course_edit"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:textColor="#ff6600"
+	            android:shadowColor="#0000ff"
+	            android:textSize="18sp"
+	            android:layout_gravity="left"
+	            android:text="编辑" >
+        	</TextView>
+        </LinearLayout>
+        <LinearLayout  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/table_shape"
+        android:layout_marginTop="6dp"
+        android:padding="10dip">
+        	
+            <TextView
+	            android:id="@+id/course_student_delall"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:textColor="#ff6600"
+	            android:shadowColor="#0000ff"
+	            android:textSize="18sp"
+	            android:layout_gravity="left"
+	            android:text="清空学生" >
+        	</TextView>
+        </LinearLayout>
+        <LinearLayout  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/table_shape"
+        android:layout_marginTop="6dp"
+        android:padding="10dip">
+        	
+            <TextView
+	            android:id="@+id/course_student_manage"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:textColor="#ff6600"
+	            android:shadowColor="#0000ff"
+	            android:textSize="18sp"
+	            android:layout_gravity="left"
+	            android:text="学生管理" >
+        	</TextView>
+        </LinearLayout>
+       
+     
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <com.coursemis.view.myView.TitleView
+            android:id="@+id/tStart_signIn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></com.coursemis.view.myView.TitleView>
+
+        <!--<Button
+            android:id="@+id/TeacherStarLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select"
+            android:text="开启定位" />-->
+
+        <com.coursemis.view.myView.SelectItemView
+            android:id="@+id/TeacherStarLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select"
+            app:signInClassName="开启定位"
+            app:signInResultName="未定位"
+            />
+
+        <com.coursemis.view.myView.SelectItemView
+            android:id="@+id/TSignIn_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select"
+            app:signInClassName="选择课程"
+            app:signInResultName="未选择"/>
+
+        <com.coursemis.view.myView.SelectItemView
+            android:id="@+id/TSignIn_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select"
+            android:text="课程周数"
+            app:signInClassName="课程周数"
+            app:signInResultName="未选择"/>
+
+        <com.coursemis.view.myView.SelectItemView
+            android:id="@+id/TSignIn_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select"
+            android:text="课程时间"
+            app:signInClassName="课程时间"
+            app:signInResultName="未选择"/>
+
+        <com.coursemis.view.myView.SelectItemView
+            android:id="@+id/TSignIn_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select"
+            android:text="签到时间限制"
+            app:signInClassName="签到时间限制"
+            app:signInResultName="未选择"/>
+
+    </TableLayout>
+
+</RelativeLayout>

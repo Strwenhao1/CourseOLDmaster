@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hwmcs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main2"
+    android:orientation="vertical">
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/homeworkmanagecourseselect_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回" />
+
+              <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="课程选择"
+                    android:layout_alignParentRight="true" >
+                </TextView>
+
+
+        </LinearLayout>
+    -->
+
+  <!--  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/title_bg"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/homeworkmanagecourseselect_back"
+            style="@style/Text.Title_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/title_btn_back"
+            android:minWidth="60dip"
+            android:text="返回" />
+
+        <TextView
+
+            style="@style/Text.Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="课程选择" />
+
+        <Button
+
+            style="@style/Text.Title_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:minWidth="70dip" />
+
+    </LinearLayout>
+-->
+    <com.coursemis.view.myView.TitleView
+        android:id="@+id/homework_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.coursemis.view.myView.TitleView>
+    <!--<ListView
+        android:id="@+id/homeworkmanagecourseListview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/homeworkmanage_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
